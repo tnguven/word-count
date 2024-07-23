@@ -1,5 +1,6 @@
 import fs from 'node:fs';
 import readline from 'node:readline';
+import path from "node:path"
 
 async function countText(filePath: string): Promise<Record<string, number>> {
   return new Promise((resolve, reject) => {
@@ -8,7 +9,7 @@ async function countText(filePath: string): Promise<Record<string, number>> {
       wordCount: 0,
       charCount: 0,
     };
-    const stream = fs.createReadStream(filePath);
+    const stream = fs.createReadStream(path.resolve(filePath));
     const rl = readline.createInterface({
       input: stream,
       crlfDelay: Infinity,

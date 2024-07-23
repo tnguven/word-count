@@ -1,0 +1,23 @@
+{
+  "name": "word-count",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/word",
+  "bin": "dist/word",
+  "scripts": {
+    "start": "node dist/main.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "node esbuild.config.js",
+    "type-check": "tsc --noEmit --outDir ../../.cache"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^20.14.11",
+    "esbuild": "^0.23.0",
+    "esbuild-plugin-clean": "^1.0.1",
+    "postject": "1.0.0-alpha.6",
+    "typescript": "^5.5.4"
+  }
+}

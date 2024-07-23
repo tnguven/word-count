@@ -1,0 +1,5 @@
+
+{
+  "main": "./dist/main.js",
+  "output": "./dist/word.blob"
+}
